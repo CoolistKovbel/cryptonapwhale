@@ -8,7 +8,7 @@ function App() {
   return (
     <>
       <header className="flex items-center w-full p-5 justify-between">
-        <h2 className="text-2xl">cryptonapwhale</h2>
+        <h2 className="text-2xl">sadnawale</h2>
         <nav className="w-[40%] md:w-[30%] flex items-center justify-between">
           <a
             href="/"
