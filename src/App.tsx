@@ -1,9 +1,5 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import {
-  FaDove,
-  FaFacebookSquare,
-  FaGithubSquare,
-} from "react-icons/fa";
+import { FaDove, FaFacebookSquare, FaGithubSquare } from "react-icons/fa";
 
 import "./assets/css/global.css";
 import Home from "./pages/Home";
