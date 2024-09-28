@@ -1,15 +1,15 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { FaDove, FaFacebookSquare, FaGithubSquare } from "react-icons/fa";
 
-import "./assets/css/global.css";
 import Home from "./pages/Home";
+import "./assets/css/global.css";
 
 function App() {
   return (
     <>
       <header className="flex items-center w-full p-5 justify-between">
         <h2 className="text-2xl">sadnawale</h2>
-        <nav className="w-[40%] md:w-[30%] flex items-center justify-between">
+        <nav className="w-[40%] md:w-[15%] flex items-center justify-between">
           <a
             href="/"
             className="p-1 rounded bg-[#444] hover:bg-[#555] font-bold drop-shadow-lg"
@@ -39,7 +39,7 @@ function App() {
 
       <footer className="flex items-center flex-col md:flex-row gap-8 w-full p-5 justify-between border-t">
         <div className="w-full  md:w-[40%]">
-          <h2 className="text-2xl mb-2">cryptonapwhale</h2>
+          <h2 className="text-2xl mb-2">crysadnawale</h2>
           <p className="text-sm">
             Looking to start but dont know how, this is the place to get any
             updates or even email notifcations.
@@ -72,7 +72,7 @@ function App() {
           </nav>
         </div>
 
-        <nav className="w-full w-[15%] bg-[#444] p-2 rounded drop-shadow-lg">
+        <nav className="w-full w-[10%] bg-[#444] p-2 rounded drop-shadow-lg">
           <h2 className="text-xl mb-2 text-center bold uppercase">Links</h2>
           <div className="flex items-center justify-between flex-col gap-4">
             <a

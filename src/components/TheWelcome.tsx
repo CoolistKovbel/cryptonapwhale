@@ -6,8 +6,12 @@ import {
   FaGitter,
 } from "react-icons/fa";
 
-const TheWelcome = () => {
+import ImgME from "../assets/image/iron.png";
+import { EmailSignUp } from "../lib/action";
+import TheContact from "./TheContact";
+import ContactForm from "./ContactForm";
 
+const TheWelcome = () => {
   const refg = [
     {
       id: "1",
@@ -59,13 +63,11 @@ const TheWelcome = () => {
   return (
     <>
       <main className="flex flex-col justify-center items-center w-full min-h-screen">
-
         <div
           id="hero"
-          className="w-full p-4 bg-[#444] h-[720px] flex items-center justify-around flex-col md:flex-row"
+          className="w-full p-4  h-[720px] flex items-center justify-around flex-col md:flex-row bg-[#2425]"
         >
-
-          <div className="bg-[#444] p-4 rounded drop-shadow-lg flex flex-col gap-5">
+          <div className="bg-[#4125] p-4 rounded drop-shadow-lg flex flex-col gap-5">
             <h2 className="text-5xl capitalize">
               Looking to get into the crypto space safely
             </h2>
@@ -86,14 +88,19 @@ const TheWelcome = () => {
             </a>
           </div>
 
-          <img alt="welcoming logo image" src="http://placehold.co/300" />
+          <img
+            alt="welcoming logo image"
+            src={ImgME}
+            className="w-[300px] h-[300px]"
+          />
         </div>
 
-        <article>
-
+        <article className="w-full  h-[720px] flex flex-col items-center justify-around">
           <header className="p-4 mb-5">
-            <h2 className="text-5xl mb-4">You came to the right place</h2>
-            <p className="text-md">
+            <h2 className="text-5xl mb-4 capitalize">
+              You came to the right place
+            </h2>
+            <p className="text-lg">
               We got you with multiple unique and relaiable extentions that will
               help towards keeping your tokens safe. Be sure to use an refferal
               code to be able to earn some rewards from signing up.
@@ -108,8 +115,8 @@ const TheWelcome = () => {
               >
                 <item.icon className="text-5xl" />
                 <p>{item.des}</p>
-                <p>
-                  download today:
+                <p className="flex items-center flex-col">
+                  <span className="underline mb-2">download today:</span>
                   <a href={item.link} target="_blank">
                     {item.af}
                   </a>
@@ -117,10 +124,69 @@ const TheWelcome = () => {
               </li>
             ))}
           </ul>
+        </article>
 
+        <article className="w-full  h-[720px] flex  items-center justify-around bg-[#3444]">
+
+          <header className="h-full flex items-center flex-col justify-around">
+            <div className="text-center">
+              <h2 className="text-2xl font-bold">Want to know more?</h2>
+              <p className="text-sm text-gray-500">Sign up on our email list</p>
+            </div>
+
+            <div>
+              <span className="text-2xl font-bold">About:</span>
+              <p className="text-sm text-gray-600">
+                From many different dApps or wallets to come from you are able
+                to get or here it first through our mailing list
+              </p>
+            </div>
+          </header>
+
+          <form onSubmit={EmailSignUp} className="flex items-center flex-col p-4 bg-[#444] gap-5">
+
+            <label
+              htmlFor="emailUser"
+              className="flex items-center justify-between flex-col gap-5"
+            >
+              <span className="text-xl">UserEmail:</span>
+              <input
+                type="email"
+                placeholder="email enter"
+                className="w-full p-2 bg-[#6725]"
+              />
+            </label>
+
+            <button className="bg-[#111] hover:bg-[#411] p-2">submit</button>
+
+          </form>
 
         </article>
-        
+
+        <article className="w-full border  h-[720px] flex  items-center justify-around bg-[#3444]">
+          <ContactForm />
+
+          <header className="h-full flex items-center flex-col justify-around">
+
+            <div className="w-full p-4 text-center">
+              <h2 className="text-4xl mb-4 capitalize">Contact us today</h2>
+              <p className="text-md text-gray-500">Sign up on our email list</p>
+            </div>
+
+            <div className="p-4">
+              <span className="text-2xl font-bold">GAW:</span>
+              <p className="text-sm text-gray-600">
+                From many different dApps or wallets to come from you are able
+                to get or here it first through our mailing list
+              </p>
+            </div>
+
+          </header>
+
+        </article>
+
+
+
       </main>
     </>
   );
