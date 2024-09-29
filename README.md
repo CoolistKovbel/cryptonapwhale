@@ -1,4 +1,4 @@
-# Crpyotnapwhale
+# Csadpilwhale
 
 This is a basic website that allows you to sign up for mailing list for any crypto updates. As well as a place where you can get the latest apps to suite your inventory.
 

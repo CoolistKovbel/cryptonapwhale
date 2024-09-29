@@ -8,7 +8,6 @@ import {
 
 import ImgME from "../assets/image/iron.png";
 import { EmailSignUp } from "../lib/action";
-import TheContact from "./TheContact";
 import ContactForm from "./ContactForm";
 
 const TheWelcome = () => {
@@ -62,7 +61,7 @@ const TheWelcome = () => {
 
   return (
     <>
-      <main className="flex flex-col justify-center items-center w-full min-h-screen">
+      <main className="flex flex-col justify-center items-center w-full min-h-screen bg-gradient-to-r from-[#f02aa6] to-[#ff6f48] hover:bg-gradient-to-r hover:from-[#fff] hover:to-[#ff6f48]">
         <div
           id="hero"
           className="w-full p-4  h-[720px] flex items-center justify-around flex-col md:flex-row bg-[#2425]"
@@ -96,7 +95,7 @@ const TheWelcome = () => {
         </div>
 
         <article className="w-full  h-[720px] flex flex-col items-center justify-around">
-          <header className="p-4 mb-5">
+          <header className="p-4 mb-5 text-black">
             <h2 className="text-5xl mb-4 capitalize">
               You came to the right place
             </h2>
@@ -111,12 +110,14 @@ const TheWelcome = () => {
             {refg.map((item) => (
               <li
                 key={item.id}
-                className="bg-[#222] flex items-center justify-center flex-col gap-4 text-xl p-2 rounded drop-shadow-lg hover:bg-[#111] w-[300px] h-[300px]"
+                className="bg-[#222] flex items-center text-center justify-center flex-col gap-4 text-xl p-2 rounded drop-shadow-lg hover:bg-[#111] w-[300px] h-[300px]"
               >
                 <item.icon className="text-5xl" />
                 <p>{item.des}</p>
                 <p className="flex items-center flex-col">
-                  <span className="underline mb-2">download today:</span>
+                  <span className="underline mb-2 uppercase">
+                    download today:
+                  </span>
                   <a href={item.link} target="_blank">
                     {item.af}
                   </a>
@@ -127,29 +128,38 @@ const TheWelcome = () => {
         </article>
 
         <article className="w-full  h-[720px] flex  items-center justify-around bg-[#3444]">
-
-          <header className="h-full flex items-center flex-col justify-around">
+          <header className="h-full flex items-center flex-col justify-around w-[50%] h-[400px]">
             <div className="text-center">
-              <h2 className="text-2xl font-bold">Want to know more?</h2>
-              <p className="text-sm text-gray-500">Sign up on our email list</p>
+              <h2 className="text-4xl font-bold mb-4 capitalize">
+                Want to know more?
+              </h2>
+              <p className="text-lg text-gray-500">Sign up on our email list</p>
             </div>
 
             <div>
               <span className="text-2xl font-bold">About:</span>
               <p className="text-sm text-gray-600">
-                From many different dApps or wallets to come from you are able
-                to get or here it first through our mailing list
+                The place where you are able to get on the latest app that
+                support crypto as well as join up on a mailing list. You will be
+                be able to get weekly emails about upcoming dApps and even
+                certain events that may take place. Be sure to share with your
+                friends and use my refferal code so we can both earn some money.
+                If you ever feel the needs to communicate with someone about
+                something be sure to connact me in the contact section, ill try
+                to get to you as soon as a can.
               </p>
             </div>
           </header>
 
-          <form onSubmit={EmailSignUp} className="flex items-center flex-col p-4 bg-[#444] gap-5">
-
+          <form
+            onSubmit={EmailSignUp}
+            className="flex items-center flex-col p-4 bg-[#444] gap-5"
+          >
             <label
               htmlFor="emailUser"
               className="flex items-center justify-between flex-col gap-5"
             >
-              <span className="text-xl">UserEmail:</span>
+              <span className="text-xl">Enter Email:</span>
               <input
                 type="email"
                 placeholder="email enter"
@@ -158,34 +168,30 @@ const TheWelcome = () => {
             </label>
 
             <button className="bg-[#111] hover:bg-[#411] p-2">submit</button>
-
           </form>
-
         </article>
 
         <article className="w-full border  h-[720px] flex  items-center justify-around bg-[#3444]">
           <ContactForm />
 
-          <header className="h-full flex items-center flex-col justify-around">
-
+          <header className="h-full flex items-center flex-col justify-around w-[50%] h-[400px]">
             <div className="w-full p-4 text-center">
               <h2 className="text-4xl mb-4 capitalize">Contact us today</h2>
               <p className="text-md text-gray-500">Sign up on our email list</p>
             </div>
 
             <div className="p-4">
-              <span className="text-2xl font-bold">GAW:</span>
+              <span className="text-2xl font-bold">Aditional Information:</span>
               <p className="text-sm text-gray-600">
-                From many different dApps or wallets to come from you are able
-                to get or here it first through our mailing list
+                Getting started can be a little hard at first but #1 rule you
+                need to rememeber is to keep your wallet and menophonic phrase
+                key safe. OR you will loose.... everything limited ways of
+                retrieve your goods..
               </p>
             </div>
-
           </header>
-
+          
         </article>
-
-
 
       </main>
     </>

@@ -4,6 +4,8 @@ import { FaDove, FaFacebookSquare, FaGithubSquare } from "react-icons/fa";
 import Home from "./pages/Home";
 import "./assets/css/global.css";
 
+
+
 function App() {
   return (
     <>
@@ -39,7 +41,7 @@ function App() {
 
       <footer className="flex items-center flex-col md:flex-row gap-8 w-full p-5 justify-between border-t">
         <div className="w-full  md:w-[40%]">
-          <h2 className="text-2xl mb-2">crysadnawale</h2>
+          <h2 className="text-2xl mb-2">sadnawale</h2>
           <p className="text-sm">
             Looking to start but dont know how, this is the place to get any
             updates or even email notifcations.
@@ -72,7 +74,7 @@ function App() {
           </nav>
         </div>
 
-        <nav className="w-full w-[10%] bg-[#444] p-2 rounded drop-shadow-lg">
+        <nav className="w-[300px] bg-[#444] p-2 rounded drop-shadow-lg">
           <h2 className="text-xl mb-2 text-center bold uppercase">Links</h2>
           <div className="flex items-center justify-between flex-col gap-4">
             <a
