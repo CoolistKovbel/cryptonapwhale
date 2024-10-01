@@ -3,8 +3,8 @@ import { FaDove, FaFacebookSquare, FaGithubSquare } from "react-icons/fa";
 
 import Home from "./pages/Home";
 import "./assets/css/global.css";
-
-
+import TheContact from "./components/TheContact";
+import TheAbout from "./components/TheAbout";
 
 function App() {
   return (
@@ -19,13 +19,13 @@ function App() {
             home
           </a>
           <a
-            href="#about"
+            href="/about"
             className="p-1 rounded bg-[#444] hover:bg-[#555] font-bold drop-shadow-lg"
           >
             about
           </a>
           <a
-            href="#contact"
+            href="/contact"
             className="p-1 rounded bg-[#444] hover:bg-[#555] font-bold drop-shadow-lg"
           >
             contact
@@ -36,6 +36,8 @@ function App() {
       <Router>
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/contact" element={<TheContact />} />
+          <Route path="/about" element={<TheAbout />} />
         </Routes>
       </Router>
 

@@ -1,21 +1,7 @@
-import ContactForm from "./ContactForm";
-
-
-const TheContact = async () => {
+const TheContact = () => {
   return (
     <main className="min-h-screen w-full bg-[#111] text-white flex items-center justify-center">
       <div className="max-w-3xl p-8 rounded-lg border-2 border-gray-800">
-        <h2 className="text-3xl md:text-5xl font-bold mb-6">Need a quote</h2>
-        <p className="text-lg mb-6">
-          Need help marketing your next project, product, or even website.
-          Contact us with some additional details about your objective and we
-          will get back to you as soon as we can.
-        </p>
-
-        {/* Contact Form */}
-        <ContactForm />
-        
-
         <div className="flex items-center justify-between">
           <div>
             <h3 className="text-xl font-semibold mb-2">Connect with Me:</h3>

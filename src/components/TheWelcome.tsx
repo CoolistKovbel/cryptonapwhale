@@ -7,8 +7,8 @@ import {
 } from "react-icons/fa";
 
 import ImgME from "../assets/image/iron.png";
-import { EmailSignUp } from "../lib/action";
 import ContactForm from "./ContactForm";
+import { ContactEmail } from "../lib/action";
 
 const TheWelcome = () => {
   const refg = [
@@ -50,14 +50,15 @@ const TheWelcome = () => {
     },
     {
       id: "5",
-      af: "Kukoin",
+      af: "Phemax",
       des: `An app that allows you to manage your assets on at the touch of
                 your finger tips.`,
-      link: "https://cash.app/app/H1W6G6Z",
-      code: "31498es",
+      link: "https://phemex.com/account/referral/invite-friends-entry?referralCode=DYENM5",
+      code: "DYENM5",
       icon: FaDatabase,
     },
   ];
+
 
   return (
     <>
@@ -94,7 +95,7 @@ const TheWelcome = () => {
           />
         </div>
 
-        <article className="w-full  h-[720px] flex flex-col items-center justify-around">
+        <article className="w-full h-[fit] md:h-[820px] flex flex-col items-center justify-around">
           <header className="p-4 mb-5 text-black">
             <h2 className="text-5xl mb-4 capitalize">
               You came to the right place
@@ -126,82 +127,6 @@ const TheWelcome = () => {
           </ul>
         </article>
 
-        <article className="w-full  h-[720px] flex  items-center justify-around bg-[#344]">
-          <header className=" w-[50%] h-[500px] ">
-            <div className="bg-[#444] flex items-center flex-col justify-around h-full p-5 rounded drop-shadow-lg">
-              <div className="text-center">
-                <h2 className="text-3xl md:text-6xl font-bold mb-4 capitalize">
-                  Want to know more?
-                </h2>
-                <p className=" text-gray-500 text-lg md:text-xl underline">
-                  Sign up on our email list
-                </p>
-              </div>
-
-              <div className="p-1">
-                <span className="text-4xl font-bold mb-2">About:</span>
-                <p className="text-sm text-gray-300">
-                  The place where you are able to get on the latest app that
-                  support crypto as well as join up on a mailing list. You will
-                  be be able to get weekly emails about upcoming dApps and even
-                  certain events that may take place. Be sure to share with your
-                  friends and use my refferal code so we can both earn some
-                  money. If you ever feel the needs to communicate with someone
-                  about something be sure to connact me in the contact section,
-                  ill try to get to you as soon as a can.
-                </p>
-              </div>
-            </div>
-          </header>
-
-          <form
-            onSubmit={EmailSignUp}
-            className="flex items-center flex-col p-4 bg-[#444] gap-5 rounded drop-shadow-lg"
-          >
-            <label
-              htmlFor="emailUser"
-              className="flex items-center justify-between flex-col gap-5"
-            >
-              <span className="text-xl">Enter Email:</span>
-              <input
-                type="email"
-                placeholder="email enter"
-                className="w-full p-2 bg-[#6725]"
-              />
-            </label>
-
-            <button className="bg-[#111] hover:bg-[#411] p-2">submit</button>
-          </form>
-        </article>
-
-        <article className="w-full border  h-[720px] flex  items-center justify-around bg-[#3444]">
-          <ContactForm />
-
-          <header className="  w-[50%] h-[400px] bg-[#444] rounded drop-shadow-lg">
-            <div className="h-full flex items-center flex-col justify-around">
-              <div className="w-full p-4 text-center">
-                <h2 className="text-3xl md:text-6xl mb-4 capitalize">
-                  Contact us today
-                </h2>
-                <p className="text-lg text-gray-500 underline">
-                  Sign up on our email list
-                </p>
-              </div>
-
-              <div className="p-4">
-                <span className="text-2xl font-bold">
-                  Additional Information:
-                </span>
-                <p className="text-sm text-gray-300">
-                  Getting started can be a little hard at first but #1 rule you
-                  need to rememeber is to keep your wallet and menophonic phrase
-                  key safe. OR you will loose.... everything limited ways of
-                  retrieve your goods..
-                </p>
-              </div>
-            </div>
-          </header>
-        </article>
       </main>
     </>
   );
