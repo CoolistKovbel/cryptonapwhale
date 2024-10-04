@@ -6,9 +6,8 @@ import {
   FaGitter,
 } from "react-icons/fa";
 
-import ImgME from "../assets/image/iron.png";
-import ContactForm from "./ContactForm";
-import { ContactEmail } from "../lib/action";
+import ImgME from "../assets/image/logov2.png";
+
 
 const TheWelcome = () => {
   const refg = [

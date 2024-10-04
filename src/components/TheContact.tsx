@@ -15,17 +15,17 @@ const TheContact = () => {
                   Twitter
                 </a>
               </li>
-              <li>
+              {/* <li>
                 <a href="#" className="text-purple-400 hover:text-purple-300">
-                  LinkedIn
+                  
                 </a>
-              </li>
+              </li> */}
             </ul>
           </div>
 
           <div>
             <h3 className="text-xl font-semibold mb-2">Or Drop an Email:</h3>
-            <p className="text-gray-400">noEmail@yet.com</p>
+            <p className="text-gray-400">gameboylyub@gmail.com</p>
           </div>
         </div>
       </div>
