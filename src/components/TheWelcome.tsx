@@ -8,7 +8,6 @@ import {
 
 import ImgME from "../assets/image/logov2.png";
 
-
 const TheWelcome = () => {
   const refg = [
     {
@@ -57,7 +56,6 @@ const TheWelcome = () => {
       icon: FaDatabase,
     },
   ];
-
 
   return (
     <>
@@ -124,9 +122,7 @@ const TheWelcome = () => {
               </li>
             ))}
           </ul>
-
         </article>
-
       </main>
     </>
   );
