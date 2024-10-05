@@ -32,21 +32,21 @@ const TheWelcome = () => {
     {
       id: "3",
       af: "Coinbase",
-      link: "https://cash.app/app/H1W6G6Z",
-      code: "31498es",
+      link: "https://coinbase.vom/join/TLCGS7W",
+      code: "TLCGS7W",
       des: `An app that allows you to manage your assets on at the touch of
                 your finger tips.`,
       icon: FaCubes,
     },
-    {
-      id: "4",
-      af: "Kraken",
-      des: `An app that allows you to manage your assets on at the touch of
-                your finger tips.`,
-      link: "https://cash.app/app/H1W6G6Z",
-      code: "31498es",
-      icon: FaGitter,
-    },
+    // {
+    //   id: "4",
+    //   af: "Kraken",
+    //   des: `An app that allows you to manage your assets on at the touch of
+    //             your finger tips.`,
+    //   link: "https://cash.app/app/H1W6G6Z",
+    //   code: "31498es",
+    //   icon: FaGitter,
+    // },
     {
       id: "5",
       af: "Phemax",
@@ -80,7 +80,7 @@ const TheWelcome = () => {
               </p>
             </div>
             <a
-              href="#"
+              href="/about"
               className="bg-emerald-500 hover:bg-emerald-800 font-bold p-4 w-[20%] font-bold"
             >
               Learn More
@@ -124,6 +124,7 @@ const TheWelcome = () => {
               </li>
             ))}
           </ul>
+
         </article>
 
       </main>

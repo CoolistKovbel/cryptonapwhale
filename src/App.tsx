@@ -51,11 +51,11 @@ function App() {
 
           <nav className="flex items-center flex-col md:flex-row  gap-4 mt-3">
             <a
-              href="/"
+              href="https://x.com/KiYoSef81"
               className="text-sm text-emerald-500 bg-[#111] hover:bg-[#444] flex gap-4 items-center p-2 drop-shadow-lg rounded"
             >
               <FaDove />
-              <span>@cryptonapwhale</span>
+              <span>@CryptonApeTokahop</span>
             </a>
 
             <a
@@ -63,11 +63,11 @@ function App() {
               className="text-sm text-emerald-500 bg-[#111] hover:bg-[#444] flex gap-4 items-center p-2 drop-shadow-lg rounded"
             >
               <FaFacebookSquare />
-              <span>@cryptonapwhale</span>
+              <span>@CryptonApeTokahop</span>
             </a>
 
             <a
-              href="/"
+              href="https://github.com/crispysandwhich"
               className="text-sm text-emerald-500 bg-[#111] hover:bg-[#444] flex gap-4 items-center p-2 drop-shadow-lg rounded"
             >
               <FaGithubSquare />
