@@ -112,6 +112,7 @@ const TheWelcome = () => {
               >
                 <a href={item.link} target="_blank">
                   <item.icon className="text-6xl mx-auto mb-4" />
+                  <h2 className="font-bold uppercase">{item.af}</h2>
                   <p>{item.des}</p>
                   <p className="flex items-center flex-col">
                     <span className="underline mb-2 uppercase">
